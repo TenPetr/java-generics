@@ -1,8 +1,8 @@
-package com.tenpetr.generics;
+package com.tenpetr;
 
 import java.util.ArrayList;
 
-public class NodeList implements GenericNodeList {
+public class NodeList implements NodeListGenerics {
 
     private ArrayList<Node> list = new ArrayList<>();
 
