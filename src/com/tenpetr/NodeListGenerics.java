@@ -1,10 +1,10 @@
 package com.tenpetr;
 
-public interface NodeListGenerics {
+public interface NodeListGenerics<T> {
 
-        void add(String s);
+        void add(T s);
 
-        Node<String> get(int index);
+        Node<T> get(int index);
 
         void remove(int index);
 }

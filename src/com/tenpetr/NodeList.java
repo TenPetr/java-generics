@@ -2,20 +2,20 @@ package com.tenpetr;
 
 import java.util.ArrayList;
 
-public class NodeList implements NodeListGenerics {
+public class NodeList<T> implements NodeListGenerics<T> {
 
-    private ArrayList<Node<String>> list = new ArrayList<>();
+    private ArrayList<Node<T>> list = new ArrayList<>();
 
     @Override
-    public void add(String s) {
-        var node = new Node<String>();
-        node.setText(s);
+    public void add(T s) {
+        var node = new Node<T>();
+        node.setObject(s);
 
         list.add(node);
     }
 
     @Override
-    public Node<String> get(int index) {
+    public Node<T> get(int index) {
         return list.get(index);
     }
 
