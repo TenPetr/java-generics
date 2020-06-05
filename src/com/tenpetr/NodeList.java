@@ -2,7 +2,7 @@ package com.tenpetr;
 
 import java.util.ArrayList;
 
-public class NodeList implements NodeListGenerics {
+public class NodeList implements NodeListGenerics<String> {
 
     private ArrayList<Node<String>> list = new ArrayList<>();
 
