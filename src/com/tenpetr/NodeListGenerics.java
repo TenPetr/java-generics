@@ -4,7 +4,7 @@ public interface NodeListGenerics {
 
         void add(String s);
 
-        String get(int index);
+        Node<String> get(int index);
 
         void remove(int index);
 }

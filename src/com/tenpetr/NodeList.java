@@ -4,20 +4,23 @@ import java.util.ArrayList;
 
 public class NodeList implements NodeListGenerics {
 
-    private ArrayList<Node> list = new ArrayList<>();
+    private ArrayList<Node<String>> list = new ArrayList<>();
 
     @Override
     public void add(String s) {
+        var node = new Node<String>();
+        node.setText(s);
 
+        list.add(node);
     }
 
     @Override
-    public String get(int index) {
-        return null;
+    public Node<String> get(int index) {
+        return list.get(index);
     }
 
     @Override
     public void remove(int index) {
-
+        list.remove(index);
     }
 }
