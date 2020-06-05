@@ -2,13 +2,13 @@ package com.tenpetr;
 
 public class Node<T> {
 
-    private T text;
+    private T object;
 
-    public T getText() {
-        return text;
+    public T getObject() {
+        return object;
     }
 
-    public void setText(T text) {
-        this.text = text;
+    public void setObject(T object) {
+        this.object = object;
     }
 }
